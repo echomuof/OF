@@ -4,7 +4,7 @@ package java_leetcode;
  * @author: wangdarui
  * @date: 2020/9/15
  */
-public class _21_合并两个有序链表 {
+public class _21_鍚堝苟涓や釜鏈夊簭閾捐〃 {
     public static void main(String[] args) {
         ListNode node3 = new ListNode(4);
         ListNode node2 = new ListNode(2, node3);

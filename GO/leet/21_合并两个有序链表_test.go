@@ -4,12 +4,6 @@ import (
 	"testing"
 )
 
-type ListNode struct {
-	Val  int
-	Next *ListNode
-}
-
-
 func TestMerge(t *testing.T) {
 	node3 := ListNode{
 		Val: 4,

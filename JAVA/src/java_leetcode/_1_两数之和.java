@@ -8,7 +8,7 @@ import java.util.Map;
  * @author: wangdarui
  * @date: 2020/9/14
  */
-public class _1_两数之和 {
+public class _1_涓ゆ暟涔嬪拰 {
     public static void main(String[] args) {
         int[] nums = {2, 7, 11, 15};
         int target = 9;
