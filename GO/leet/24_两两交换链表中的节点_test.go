@@ -4,11 +4,6 @@ import (
 	"testing"
 )
 
-type ListNode struct {
-	Val  int
-	Next *ListNode
-}
-
 func TestSwapListNode(t *testing.T) {
 	n4 := &ListNode{
 		Val: 4,
