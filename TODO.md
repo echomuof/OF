@@ -1,18 +1,5 @@
 
-课后作业
-https://leetcode-cn.com/problems/remove-duplicates-from-sorted-array/
-https://leetcode-cn.com/problems/rotate-array/
-https://leetcode-cn.com/problems/merge-two-sorted-lists/
-https://leetcode-cn.com/problems/merge-sorted-array/
-https://leetcode-cn.com/problems/two-sum/
-https://leetcode-cn.com/problems/move-zeroes/
-https://leetcode-cn.com/problems/plus-one/
-
-
 4
-预习题目
-https://leetcode-cn.com/problems/valid-parentheses/
-https://leetcode-cn.com/problems/min-stack/
 实战题目
 https://leetcode-cn.com/problems/largest-rectangle-in-histogram
 https://leetcode-cn.com/problems/sliding-window-maximum
