@@ -13,9 +13,10 @@ public class _641_设计循环双端队列 {
 class MyCircularDeque {
 
     private int[] queue;
-
+    //指向头结点
     int front;
 
+    //指向尾结点的下一个节点
     int last;
 
     int size;

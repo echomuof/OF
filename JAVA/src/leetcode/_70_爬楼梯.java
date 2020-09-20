@@ -6,7 +6,7 @@ package leetcode;
  */
 public class _70_爬楼梯 {
     public static void main(String[] args) {
-        System.out.println(climbStairs(3));
+        System.out.println(climbStairs2(3));
     }
 
     public static int climbStairs(int n) {
@@ -19,5 +19,12 @@ public class _70_爬楼梯 {
             c = a + b;
         }
         return c;
+    }
+
+    public static int climbStairs2(int n) {
+        if (n <= 2) {
+            return n;
+        }
+        return climbStairs2(n - 1) + climbStairs2(n - 2);
     }
 }

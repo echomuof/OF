@@ -26,6 +26,7 @@ public class _239_滑动窗口最大值 {
                 queue.pollLast();
             }
             queue.addLast(i);
+            //超出k范围
             if (queue.peekFirst() <= i - k) {
                 queue.pollFirst();
             }
