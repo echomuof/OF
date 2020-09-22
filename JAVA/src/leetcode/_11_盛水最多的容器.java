@@ -4,7 +4,7 @@ package leetcode;
  * @author: wangdarui
  * @date: 2020/9/14
  */
-public class _2_盛水最多的容器 {
+public class _11_盛水最多的容器 {
 
     public static void main(String[] args) {
         int[] arr = {1, 8, 6, 2, 5, 4, 8, 3, 7};

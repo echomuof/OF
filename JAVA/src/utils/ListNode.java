@@ -20,4 +20,19 @@ public class ListNode {
         this.val = val;
         this.next = next;
     }
+
+    public static ListNode buildListNode(int[] arr) {
+        if (arr == null || arr.length == 0) {
+            return null;
+        }
+        ListNode head = new ListNode(arr[0]);
+        ListNode pre = head;
+        if (arr.length > 1) {
+            for (int i = 1; i < arr.length; i++) {
+                pre.next = new ListNode(arr[i]);
+                pre = pre.next;
+            }
+        }
+        return head;
+    }
 }
