@@ -2,11 +2,6 @@
 
 
 实战题目
-https://leetcode-cn.com/problems/invert-binary-tree/description/
-https://leetcode-cn.com/problems/validate-binary-search-tree
-https://leetcode-cn.com/problems/maximum-depth-of-binary-tree
-https://leetcode-cn.com/problems/minimum-depth-of-binary-tree
-https://leetcode-cn.com/problems/serialize-and-deserialize-binary-tree/
 每日一课
 如何优雅地计算斐波那契数列
 课后作业
