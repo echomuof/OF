@@ -6,8 +6,6 @@
 如何优雅地计算斐波那契数列
 课后作业
 https://leetcode-cn.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal
-
-实战题目
 https://leetcode-cn.com/problems/minimum-genetic-mutation/#/description
 课后作业
 https://leetcode-cn.com/problems/word-ladder/description/
