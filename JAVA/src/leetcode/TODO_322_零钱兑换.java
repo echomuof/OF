@@ -1,14 +1,16 @@
 package leetcode;
 
+import java.util.Arrays;
+
 /**
  * @author: wangdarui
  * @date: 2020/9/24
  */
-public class _322_零钱兑换 {
+public class TODO_322_零钱兑换 {
     public static void main(String[] args) {
-        _322_零钱兑换 a = new _322_零钱兑换();
-        int[] coins = {1, 2, 5};
-        int amount = 11;
+        TODO_322_零钱兑换 a = new TODO_322_零钱兑换();
+        int[] coins = {2, 5, 10, 1};
+        int amount = 27;
         System.out.println(a.coinChange(coins, amount));
     }
 
@@ -16,6 +18,7 @@ public class _322_零钱兑换 {
         if (coins == null || coins.length == 0 || amount == 0) {
             return 0;
         }
+        Arrays.sort(coins);
         int res = 0;
         for (int i = coins.length - 1; i >= 0; i--) {
             if (coins[i] > amount) {
