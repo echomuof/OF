@@ -9,8 +9,8 @@ https://leetcode-cn.com/problems/minesweeper/description/
 
 ===========================================================================
 
-https://leetcode-cn.com/problems/lemonade-change/description/
 https://leetcode-cn.com/problems/walking-robot-simulation/description/
  https://leetcode-cn.com/problems/jump-game-ii/
 
+https://leetcode-cn.com/problems/find-minimum-in-rotated-sorted-array/
 
