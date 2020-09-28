@@ -38,7 +38,7 @@ public class _24_两两交换链表中的节点 {
             return head;
         }
         ListNode next = head.next;
-        head.next = swapPairs(next.next);
+        head.next = swapPairs2(next.next);
         next.next = head;
         return next;
     }
