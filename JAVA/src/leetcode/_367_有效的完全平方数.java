@@ -10,7 +10,7 @@ public class _367_有效的完全平方数 {
             return true;
         }
         long l = 2;
-        long r = num / 2;
+        long r = num;
         while (l <= r) {
             long mid = l + (r - l) / 2;
             if (mid * mid == num) {
