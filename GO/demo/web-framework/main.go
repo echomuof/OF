@@ -1,5 +1,8 @@
 package main
 
+import "context"
+
 func main() {
-	gee.New
+	context.Background()
+	m := make(map[string]int)
 }

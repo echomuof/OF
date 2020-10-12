@@ -1,21 +1,24 @@
 package leetcode;
 
+import java.util.Arrays;
+
 /**
  * @author: wangdarui
  * @created: 2020/9/29
  */
 public class 最少钞票 {
     public static void main(String[] args) {
-        System.out.println(getCount(2000));
+        int[] bankNotes = {1, 2, 5};
+        System.out.println(getCount(bankNotes, 0));
     }
 
-    public static int getCount(int money) {
-        int[] bankNotes = {100, 50, 20, 10, 5, 1};
-        int count = 0;
-        for (int bankNote : bankNotes) {
-            count += money / bankNote;
-            money %= bankNote;
+    public static int getCount(int[] cars, int num) {
+        Arrays.sort(cars);
+        int ans = 0;
+        for (int i = cars.length - 1; i >= 0; i--) {
+            ans += num / cars[i];
+            num %= cars[i];
         }
-        return count;
+        return ans == 0 ? -1 : ans;
     }
 }
