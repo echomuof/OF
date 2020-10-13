@@ -9,25 +9,21 @@ import java.util.Arrays;
 public class TODO_322_零钱兑换 {
     public static void main(String[] args) {
         TODO_322_零钱兑换 a = new TODO_322_零钱兑换();
-        int[] coins = {2, 5, 10, 1};
-        int amount = 27;
+        int[] coins = {1};
+        int amount = 0;
         System.out.println(a.coinChange(coins, amount));
     }
 
     public int coinChange(int[] coins, int amount) {
-        if (coins == null || coins.length == 0 || amount == 0) {
-            return 0;
-        }
+        if (amount==0) return amount;
         Arrays.sort(coins);
-        int res = 0;
+        int count = 0;
         for (int i = coins.length - 1; i >= 0; i--) {
-            if (coins[i] > amount) {
-                continue;
-            }
             int cur = amount / coins[i];
-            amount -= coins[i] * cur;
-            res += cur;
+            amount -= cur * coins[i];
+            count += cur;
+            amount %= coins[i];
         }
-        return amount == 0 ? res : -1;
+        return count == 0 || amount != 0 ? -1 : count;
     }
 }
