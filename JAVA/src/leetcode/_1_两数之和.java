@@ -16,15 +16,14 @@ public class _1_两数之和 {
     }
 
     public static int[] twoSum(int[] nums, int target) {
-        Map<Integer, Integer> map = new HashMap<>();
-        for (int i = 0; i < nums.length; i++) {
-            Integer cur = map.get(target - nums[i]);
-            if (cur != null) {
-                return new int[]{i, cur};
-            }
-            map.put(nums[i], i);
+        int l = 0, r = nums.length - 1;
+        while (l < r) {
+            int cur = nums[l] + nums[r];
+            if (cur==target) return new int[]{nums[l], nums[r]};
+            else if (cur<target) l++;
+            else r--;
         }
-        return new int[]{};
+        return new int[0];
     }
 
 }
