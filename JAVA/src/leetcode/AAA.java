@@ -21,7 +21,7 @@ public class AAA {
         for (int i = 0; i < split.length; i++) {
             nums[i] = Integer.parseInt(split[i]);
         }*/
-        int[] nums = {0, 1, 2, 1, 2};
+        int[] nums = {2, 3, 1, 1, 4};
         System.out.println(jump(nums, 5));
     }
 
