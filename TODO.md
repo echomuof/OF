@@ -17,8 +17,6 @@ https://leetcode-cn.com/problems/find-minimum-in-rotated-sorted-array/
 
 
 DP
-https://leetcode-cn.com/problems/unique-paths/
-https://leetcode-cn.com/problems/unique-paths-ii/
 https://leetcode-cn.com/problems/longest-common-subsequence/
 
 https://leetcode-cn.com/problems/climbing-stairs/description/
