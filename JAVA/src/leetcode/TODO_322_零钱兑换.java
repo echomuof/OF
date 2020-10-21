@@ -1,29 +1,31 @@
 package leetcode;
 
-import java.util.Arrays;
-
 /**
  * @author: wangdarui
- * @date: 2020/9/24
+ * @created: 2020/10/21
  */
 public class TODO_322_零钱兑换 {
     public static void main(String[] args) {
-        TODO_322_零钱兑换 a = new TODO_322_零钱兑换();
-        int[] coins = {1};
-        int amount = 0;
-        System.out.println(a.coinChange(coins, amount));
+
     }
 
     public int coinChange(int[] coins, int amount) {
-        if (amount==0) return amount;
-        Arrays.sort(coins);
-        int count = 0;
-        for (int i = coins.length - 1; i >= 0; i--) {
-            int cur = amount / coins[i];
-            amount -= cur * coins[i];
-            count += cur;
-            amount %= coins[i];
+        if (amount<1) return 0;
+        return recur(coins, amount, new int[amount]);
+    }
+
+    public int recur(int[] coins, int cur, int[] count) {
+        if (cur < 0) return -1;
+        if (cur == 0) return 0;
+        if (count[cur - 1] != 0) return count[cur - 1];
+        int min = Integer.MAX_VALUE;
+        for (int coin : coins) {
+            int res = recur(coins, cur - coin, count);
+            if (res >= 0 && res < min) {
+                min = res + 1;
+            }
         }
-        return count == 0 || amount != 0 ? -1 : count;
+        count[cur - 1] = (min == Integer.MAX_VALUE) ? -1 : min;
+        return count[cur - 1];
     }
 }
