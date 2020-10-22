@@ -16,15 +16,7 @@ https://leetcode-cn.com/problems/find-minimum-in-rotated-sorted-array/
 
 
 DP
-https://leetcode-cn.com/problems/maximum-product-subarray/description/
-https://leetcode-cn.com/problems/coin-change/description/
-
-
 实战题目
-https://leetcode-cn.com/problems/house-robber/
-https://leetcode-cn.com/problems/house-robber-ii/description/
-https://leetcode-cn.com/problems/best-time-to-buy-and-sell-stock/#/description
-https://leetcode-cn.com/problems/best-time-to-buy-and-sell-stock-ii/
 https://leetcode-cn.com/problems/best-time-to-buy-and-sell-stock-iii/
 https://leetcode-cn.com/problems/best-time-to-buy-and-sell-stock-with-cooldown/
 https://leetcode-cn.com/problems/best-time-to-buy-and-sell-stock-iv/
