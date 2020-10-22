@@ -10,19 +10,12 @@ https://leetcode-cn.com/problems/minesweeper/description/
 ===========================================================================
 
 https://leetcode-cn.com/problems/walking-robot-simulation/description/
- https://leetcode-cn.com/problems/jump-game-ii/
 
 https://leetcode-cn.com/problems/find-minimum-in-rotated-sorted-array/
 
 
 
 DP
-https://leetcode-cn.com/problems/longest-common-subsequence/
-
-https://leetcode-cn.com/problems/climbing-stairs/description/
-https://leetcode-cn.com/problems/triangle/description/
-https://leetcode.com/problems/triangle/discuss/38735/Python-easy-to-understand-solutions-(top-down-bottom-up)
-https://leetcode-cn.com/problems/maximum-subarray/
 https://leetcode-cn.com/problems/maximum-product-subarray/description/
 https://leetcode-cn.com/problems/coin-change/description/
 

@@ -11,10 +11,10 @@ public class _53_最大子序和 {
     }
 
     public static int maxSubArray(int[] nums) {
-        int max = nums[0];
         int head = 0;
+        int max = nums[0];
         for (int num : nums) {
-            head = Math.max(head + num, num);
+            head = Math.max(num, head + num);
             max = Math.max(max, head);
         }
         return max;
