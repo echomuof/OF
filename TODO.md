@@ -11,10 +11,6 @@ https://leetcode-cn.com/problems/minesweeper/description/
 
 https://leetcode-cn.com/problems/walking-robot-simulation/description/
 
-https://leetcode-cn.com/problems/find-minimum-in-rotated-sorted-array/
-
-
-
 DP
 实战题目
 https://leetcode-cn.com/problems/best-time-to-buy-and-sell-stock-iii/
@@ -35,7 +31,6 @@ https://leetcode-cn.com/problems/coin-change-2/
 注意：请大家先消化前面的实战题目，高级 DP 的方法和题解会在课程后面解锁。
 课后作业
 https://leetcode-cn.com/problems/longest-valid-parentheses/
-https://leetcode-cn.com/problems/minimum-path-sum/
 https://leetcode-cn.com/problems/edit-distance/
 https://leetcode-cn.com/problems/decode-ways
 https://leetcode-cn.com/problems/maximal-square/
@@ -47,3 +42,8 @@ https://leetcode-cn.com/problems/task-scheduler/
 https://leetcode-cn.com/problems/palindromic-substrings/
 https://leetcode-cn.com/problems/minimum-window-substring/
 https://leetcode-cn.com/problems/burst-balloons/
+
+
+
+trie tree
+
