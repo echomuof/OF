@@ -21,10 +21,6 @@ https://leetcode-cn.com/problems/best-time-to-buy-and-sell-stock/solution/yi-ge-
 高级 DP 实战题目
 https://leetcode-cn.com/problems/perfect-squares/
 https://leetcode-cn.com/problems/edit-distance/ （重点）
-https://leetcode-cn.com/problems/jump-game/
-https://leetcode-cn.com/problems/jump-game-ii/
-https://leetcode-cn.com/problems/unique-paths/
-https://leetcode-cn.com/problems/unique-paths-ii/
 https://leetcode-cn.com/problems/unique-paths-iii/
 https://leetcode-cn.com/problems/coin-change/
 https://leetcode-cn.com/problems/coin-change-2/

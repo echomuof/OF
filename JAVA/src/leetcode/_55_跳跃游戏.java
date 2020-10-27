@@ -6,12 +6,10 @@ package leetcode;
  */
 public class _55_跳跃游戏 {
     public boolean canJump(int[] nums) {
-        if (nums == null) {
-            return false;
-        }
+        if (nums == null || nums.length == 0) return true;
         int end = nums.length - 1;
         for (int i = nums.length - 1; i >= 0; i--) {
-            if (nums[i] + i >= end) {
+            if (i + nums[i] >= end) {
                 end = i;
             }
         }
