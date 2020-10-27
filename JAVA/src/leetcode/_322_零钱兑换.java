@@ -4,13 +4,13 @@ package leetcode;
  * @author: wangdarui
  * @created: 2020/10/21
  */
-public class TODO_322_零钱兑换 {
+public class _322_零钱兑换 {
     public static void main(String[] args) {
 
     }
 
     public int coinChange(int[] coins, int amount) {
-        if (amount<1) return 0;
+        if (amount < 1) return 0;
         return recur(coins, amount, new int[amount]);
     }
 
@@ -21,9 +21,7 @@ public class TODO_322_零钱兑换 {
         int min = Integer.MAX_VALUE;
         for (int coin : coins) {
             int res = recur(coins, cur - coin, count);
-            if (res >= 0 && res < min) {
-                min = res + 1;
-            }
+            if (res >= 0 && res < min) min = res + 1;
         }
         count[cur - 1] = (min == Integer.MAX_VALUE) ? -1 : min;
         return count[cur - 1];
