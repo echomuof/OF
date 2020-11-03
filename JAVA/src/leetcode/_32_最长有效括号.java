@@ -1,5 +1,7 @@
 package leetcode;
 
+import java.util.Deque;
+import java.util.LinkedList;
 import java.util.Stack;
 
 /**
@@ -8,16 +10,37 @@ import java.util.Stack;
  */
 public class _32_最长有效括号 {
     public static void main(String[] args) {
-        System.out.println(longestValidParentheses(")()())"));
+        System.out.println(longestValidParentheses("()(()"));
     }
 
     public static int longestValidParentheses(String s) {
         if (s == null || s.length() == 0) return 0;
         int[] dp = new int[s.length()];
-        dp[0] = 0;
+        Deque<Integer> deque = new LinkedList<>();
+        deque.offerLast(0);
         for (int i = 1; i < s.length(); i++) {
-            dp[i] = dp[i - 1] + ((s.charAt(i - 1) == '(' && s.charAt(i) == ')') ? 2 : -1);
+            char cur = s.charAt(i);
+            dp[i] = dp[i - 1];
+            if (!deque.isEmpty() && cur == ')' && s.charAt(deque.peekLast()) == '(') {
+                deque.pollLast();
+                dp[i] += 2;
+            } else {
+                deque.offerLast(i);
+            }
         }
-        return dp[dp.length - 1] * 2;
+        int max = Integer.MIN_VALUE;
+        int step = 0;
+        for (int i = 0; i < dp.length; i++) {
+            Integer pollFirst = deque.pollFirst();
+            if (!deque.isEmpty() && pollFirst != deque.peekFirst() - 1) {
+                step += 2;
+            } else {
+                deque.offerFirst(pollFirst);
+            }
+            dp[i] -= step;
+            max = Math.max(max, dp[i]);
+        }
+
+        return max;
     }
 }
