@@ -14,20 +14,19 @@ public class _3_无重复字符的最长子串 {
     }
 
     public int lengthOfLongestSubstring(String s) {
-        if (s == null||s.equals("")) {
-            return 0;
-        }
+        if (s == null || s.length() == 0) return 0;
         Map<Character, Integer> map = new HashMap<>();
         int start = 0;
-        int maxLength = Integer.MIN_VALUE;
+        int ans = Integer.MIN_VALUE;
         for (int i = 0; i < s.length(); i++) {
             Integer lastI = map.get(s.charAt(i));
             if (lastI != null && lastI >= start) {
                 start = lastI + 1;
             }
             map.put(s.charAt(i), i);
-            maxLength = Math.max(maxLength, i - start + 1);
+            ans = Math.max(ans, i - start + 1);
         }
-        return maxLength;
+        return ans;
+
     }
 }
