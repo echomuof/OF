@@ -1,29 +1,26 @@
+/**
+ *
+ * @author: echomuof
+ * @created: 2020/11/25
+ */
 package leetcode
 
-import "testing"
-
-func TestMaxArea(t *testing.T) {
-	arr := []int{1, 8, 6, 2, 5, 4, 8, 3, 7}
-	t.Logf("%d", getMaxArea(arr))
-}
-
-func getMaxArea(arr []int) int {
-	L := 0
-	R := len(arr) - 1
-	maxArea := 0
-	for L < R {
-		var minHeight int
-		if arr[L] <= arr[R] {
-			minHeight = arr[L]
-			L++
+func maxArea(height []int) int {
+	l, r := 0, len(height)-1
+	max := 0
+	for l != r {
+		minHeight := 0
+		if height[l] < height[r] {
+			minHeight = height[l]
+			l++
 		} else {
-			minHeight = arr[R]
-			R--
+			minHeight = height[r]
+			r--
 		}
-		curArea := minHeight * (R - L + 1)
-		if curArea > maxArea {
-			maxArea = curArea
+		curArea := minHeight * (r - l + 1)
+		if curArea > max {
+			max = curArea
 		}
 	}
-	return maxArea
+	return max
 }
