@@ -10,6 +10,8 @@ import java.util.Comparator;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
 
 /**
  * @author: wangdarui
@@ -18,12 +20,9 @@ import java.util.Map;
 public class zhua {
 
     public static void main(String[] args) throws IOException {
-        ListNode head = ListNode.buildListNode(new int[]{1, 2});
-        ListNode newHead = resort(head);
-        while (newHead != null) {
-            System.out.println(newHead.val);
-            newHead = newHead.next;
-        }
+        Integer aa = new Integer(123123);
+        System.out.println(aa.equals(Score.EA.getSs()));
+        zhua z = new zhua();
     }
 
     public static ListNode resort(ListNode head) {
@@ -41,6 +40,36 @@ public class zhua {
         return head;
     }
 
+}
+
+enum Score {
+
+    EA(123123, "asdasd"),
+    ;
+
+    private Integer ss;
+    private String aa;
+
+    public Integer getSs() {
+        return ss;
+    }
+
+    public void setSs(Integer ss) {
+        this.ss = ss;
+    }
+
+    public String getAa() {
+        return aa;
+    }
+
+    public void setAa(String aa) {
+        this.aa = aa;
+    }
+
+    Score(Integer ss, String aa) {
+        this.ss = ss;
+        this.aa = aa;
+    }
 }
 
 
