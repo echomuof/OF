@@ -19,6 +19,7 @@ public class _用一个栈实现另一个栈的排序 {
 
     /**
      * 对栈进行排序
+     *
      * @param stack
      */
     public static void sortedStack(Stack<Integer> stack) {
