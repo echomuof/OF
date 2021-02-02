@@ -8,7 +8,7 @@ import java.util.Stack;
  */
 public class _ZUO_由两个栈组成的队列 {
     public static void main(String[] args) {
-        CQueue myQueue = new CQueue();
+        MyQueue myQueue = new MyQueue();
         myQueue.add(1);
         myQueue.add(2);
         myQueue.add(3);
@@ -22,12 +22,12 @@ public class _ZUO_由两个栈组成的队列 {
     }
 }
 
-class CQueue {
+class MyQueue {
     private Stack<Integer> s1;
 
     private Stack<Integer> s2;
 
-    public CQueue() {
+    public MyQueue() {
         s1 = new Stack<>();
         s2 = new Stack<>();
     }

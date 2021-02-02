@@ -24,7 +24,6 @@ public class _84_柱状图中的最大矩形 {
         }
         Deque<Integer> stack = new LinkedList<>();
         int maxArea = Integer.MIN_VALUE;
-        stack.push(-1);
         for (int i = 0; i < heights.length; i++) {
             while (stack.peek() != -1 && heights[stack.peek()] >= heights[i]) {
                 maxArea = Math.max(maxArea, heights[stack.pop()] * (i - 1 - stack.peek()));
