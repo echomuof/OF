@@ -21,10 +21,8 @@ https://leetcode-cn.com/problems/best-time-to-buy-and-sell-stock/solution/yi-ge-
 https://leetcode-cn.com/problems/perfect-squares/
 https://leetcode-cn.com/problems/edit-distance/ （重点）
 https://leetcode-cn.com/problems/unique-paths-iii/
-https://leetcode-cn.com/problems/coin-change-2/
 注意：请大家先消化前面的实战题目，高级 DP 的方法和题解会在课程后面解锁。
 课后作业
-https://leetcode-cn.com/problems/longest-valid-parentheses/
 https://leetcode-cn.com/problems/edit-distance/
 https://leetcode-cn.com/problems/decode-ways
 https://leetcode-cn.com/problems/maximal-square/
