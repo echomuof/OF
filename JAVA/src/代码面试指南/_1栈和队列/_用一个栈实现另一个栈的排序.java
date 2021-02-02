@@ -1,6 +1,5 @@
-package okoffer._1栈和队列;
+package 代码面试指南._1栈和队列;
 
-import javax.xml.stream.events.StartDocument;
 import java.util.Stack;
 
 /**

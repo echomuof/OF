@@ -3,6 +3,8 @@ package main
 import (
 	"context"
 	"fmt"
+	"io/ioutil"
+	"net/http"
 	"sync"
 	"time"
 )
@@ -10,15 +12,15 @@ import (
 var wg sync.WaitGroup
 
 func main() {
-	ctx, cancelFunc := context.WithCancel(context.Background())
-	go work(ctx)
-	time.Sleep(time.Second * 5)
-	cancelFunc()
-	wg.Wait()
-	fmt.Println("over")
+	resp, err := http.Get("https://yz.chsi.com.cn/apply/kscx/zkzdown.do?bmh=220782139&trnd=7942a4b9-b2e9-4076-8a27-c938d27c8749")
+	if err != nil {
+		fmt.Printf("%v", err)
+	}
+	bytes, err := ioutil.ReadAll(resp.Body)
+	fmt.Println(string(bytes))
 }
 
-func work(ctx context.Context) {
+func wok(ctx context.Context) {
 LOOP:
 	for {
 		fmt.Println("working......")

@@ -24,6 +24,6 @@ public class _69_x的平方根 {
                 left = mid + 1;
             }
         }
-        return right;
+        return left;
     }
 }
