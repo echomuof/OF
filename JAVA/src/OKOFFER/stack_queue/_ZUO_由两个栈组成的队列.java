@@ -38,7 +38,6 @@ class MyQueue {
 
     public Integer poll() {
         move();
-
         return s2.pop();
     }
 

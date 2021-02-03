@@ -19,12 +19,11 @@ class MyStack {
     public MyStack() {
         this.stack = new Stack<>();
         this.minStack = new Stack<>();
-
     }
 
     public void push(Integer value) {
         stack.push(value);
-        minStack.push((stack.isEmpty() || stack.peek() >= value) ? value : stack.peek());
+        minStack.push((minStack.isEmpty() || minStack.peek() >= value) ? value : minStack.peek());
     }
 
     public Integer pop() {
