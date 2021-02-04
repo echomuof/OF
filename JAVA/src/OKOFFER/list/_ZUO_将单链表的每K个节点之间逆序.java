@@ -8,9 +8,8 @@ import utils.ListNode;
  */
 public class _ZUO_将单链表的每K个节点之间逆序 {
 
-    public ListNode reverseGroupK(ListNode head, int k) {
+    public ListNode reverseListGroupK(ListNode head, int k) {
         if (head == null || head.next == null || k < 2) return head;
-        int len = 0;
         ListNode newHead = new ListNode(0, head);
         ListNode pre = newHead;
         ListNode end = newHead;
@@ -18,18 +17,18 @@ public class _ZUO_将单链表的每K个节点之间逆序 {
             for (int i = 0; i < k; i++) {
                 end = end.next;
             }
-            ListNode start = pre.next;
             ListNode next = end.next;
+            ListNode start = pre.next;
             end.next = null;
-            pre.next = reverseList(start);
+            pre.next = reverse(start);
             start.next = next;
             pre = start;
             end = start;
         }
-        return newHead;
+        return newHead.next;
     }
 
-    public ListNode reverseList(ListNode head) {
+    public ListNode reverse(ListNode head) {
         if (head == null || head.next == null) return head;
         ListNode pre = null;
         ListNode cur = head;
