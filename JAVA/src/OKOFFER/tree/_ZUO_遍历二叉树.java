@@ -115,6 +115,10 @@ public class _ZUO_遍历二叉树 {
         System.out.println();
     }
 
+    /**
+     * 后序非递归
+     * @param root
+     */
     public static void postOrder(TreeNode root) {
         if (root == null) return;
         Stack<TreeNode> s1 = new Stack<>();
