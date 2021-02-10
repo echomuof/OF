@@ -13,19 +13,19 @@ public class _ZUO_找到二叉树中的最大搜索二叉子树 {
     }
 
     public static ReturnType process(TreeNode root) {
-        if (root == null) {
+        if (root == null)
             return new ReturnType(null, 0, Integer.MAX_VALUE, Integer.MIN_VALUE);
-        }
         ReturnType lData = process(root.left);
         ReturnType rData = process(root.right);
         int min = Math.min(root.val, Math.min(lData.getMin(), rData.getMin()));
         int max = Math.max(root.val, Math.max(lData.getMax(), rData.getMax()));
         int maxBSTSize = Math.max(lData.getMaxBSTSize(), rData.getMaxBSTSize());
         TreeNode maxBSTHead = lData.getMaxBSTSize() >= rData.getMaxBSTSize() ? lData.getMaxBSTHead() : rData.getMaxBSTHead();
-        if (lData.getMaxBSTHead() == root.left
-                && rData.getMaxBSTHead() == root.right
+        if (root.left == lData.getMaxBSTHead()
+                && root.right == rData.getMaxBSTHead()
                 && root.val > lData.getMax()
-                && root.val < rData.getMin()) {
+                && root.val < lData.getMin()
+        ) {
             maxBSTSize = lData.getMaxBSTSize() + rData.getMaxBSTSize() + 1;
             maxBSTHead = root;
         }
