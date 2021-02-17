@@ -13,20 +13,20 @@ public class _ZUO_未排序正数数组中累加和为给定值的最长子数�
 
     public static int getMaxLen(int[] nums, int k) {
         if (nums == null || nums.length == 0) return 0;
-        int left = 0;
-        int right = 0;
-        int sum = 0;
         int maxLen = 0;
-        while (right < nums.length) {
+        int l = 0;
+        int r = 0;
+        int sum = 0;
+        while (r < nums.length) {
             if (sum == k) {
-                maxLen = Math.max(maxLen, right - left + 1);
-                sum -= nums[left++];
+                maxLen = Math.max(maxLen, r - l + 1);
+                sum -= nums[l++];
             } else if (sum < k) {
-                right++;
-                if (right == nums.length) break;
-                sum += nums[right];
+                r++;
+                if (r == nums.length) break;
+                sum += nums[r];
             } else {
-                sum -= nums[left++];
+                sum -= nums[l++];
             }
         }
         return maxLen;

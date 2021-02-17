@@ -6,7 +6,7 @@ import utils.TreeNode;
  * @author: wangdarui
  * @created: 2021/2/10
  */
-public class _ZUO_判断数组是否是二叉树的后序遍历 {
+public class _ZUO_根据后序数组重建搜索二叉树 {
 
     public static TreeNode postArray2BST(int[] arr) {
         if (arr == null || arr.length == 0) return null;
