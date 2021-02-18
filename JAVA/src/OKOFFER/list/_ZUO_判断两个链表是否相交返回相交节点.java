@@ -31,11 +31,11 @@ public class _ZUO_判断两个链表是否相交返回相交节点 {
             cur1 = head1;
             cur2 = head2;
             int len = 0;
-            while (cur1.next != null) {
+            while (cur1.next != loop1) {
                 cur1 = cur1.next;
                 len++;
             }
-            while (cur2.next != null) {
+            while (cur2.next != loop2) {
                 cur2 = cur2.next;
                 len--;
             }
