@@ -12,6 +12,7 @@ public class _ZUO_单调栈 {
 
     /**
      * 没有重复的情况
+     *
      * @param nums
      * @return
      */
@@ -20,24 +21,25 @@ public class _ZUO_单调栈 {
         int[][] ans = new int[nums.length][2];
         for (int i = 0; i < nums.length; i++) {
             while (!stack.isEmpty() && nums[stack.peek()] > nums[i]) {
-                Integer pop = stack.pop();
+                Integer cur = stack.pop();
                 int left = stack.isEmpty() ? -1 : stack.peek();
-                ans[pop][0] = left;
-                ans[pop][1] = i;
+                ans[cur][0] = left;
+                ans[cur][1] = i;
             }
             stack.push(i);
         }
         while (!stack.isEmpty()) {
-            Integer pop = stack.pop();
+            Integer cur = stack.pop();
             int left = stack.isEmpty() ? -1 : stack.peek();
-            ans[pop][0] = left;
-            ans[pop][1] = -1;
+            ans[cur][0] = left;
+            ans[cur][1] = -1;
         }
         return ans;
     }
 
     /**
      * 有重复的情况
+     *
      * @param nums
      * @return
      */

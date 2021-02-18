@@ -27,7 +27,7 @@ public class _leetcode_20_有效的括号 {
                 if (cur!=map.get(pop)) return false;
             }
         }
-        return stack.size() == 0;
+        return stack.isEmpty();
     }
 
 }

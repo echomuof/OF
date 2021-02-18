@@ -20,9 +20,9 @@ public class _leetcode_24_二叉树的中序遍历 {
                 stack.push(root);
                 root = root.left;
             }
-            root = stack.pop();
-            ans.add(root.val);
-            root = root.right;
+            TreeNode cur = stack.pop();
+            ans.add(cur.val);
+            root = cur.right;
         }
         return ans;
     }
