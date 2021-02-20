@@ -13,9 +13,9 @@ public class _ZUO_在数组中找到一个局部最小的位置 {
         int r = nums.length - 1;
         while (l < r) {
             int mid = l + (r - l) / 2;
-            if (nums[mid - 1] < nums[mid]) {
+            if (nums[mid] > nums[mid - 1]) {
                 r = mid - 1;
-            } else if (nums[mid] < nums[mid + 1]) {
+            } else if (nums[mid] > nums[mid + 1]) {
                 l = mid + 1;
             } else {
                 return mid;
