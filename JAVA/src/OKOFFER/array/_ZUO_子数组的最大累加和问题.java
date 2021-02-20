@@ -22,7 +22,7 @@ public class _ZUO_子数组的最大累加和问题 {
             ans = Math.max(ans, cur);
             cur = Math.max(cur, 0);
         }
-            return ans;
+        return ans == Integer.MIN_VALUE ? 0 : ans;
     }
 
 }

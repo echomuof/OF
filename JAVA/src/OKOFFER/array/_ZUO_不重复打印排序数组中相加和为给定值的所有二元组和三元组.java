@@ -45,6 +45,7 @@ public class _ZUO_不重复打印排序数组中相加和为给定值的所有�
                     System.out.println(a + "," + b + "," + target);
                     set.remove(a);
                     set.remove(b);
+                    set.remove(target);
                 } else {
                     set.add(b);
                 }

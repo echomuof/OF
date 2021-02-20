@@ -7,6 +7,11 @@ import java.util.Arrays;
  * @created: 2021/2/14
  */
 public class _ZUO_在数组中找到出现次数大于一半的数 {
+    public static void main(String[] args) {
+        int[] nums = {3, 1, 3, 2, 3, 6, 3};
+        System.out.println(getMoreThenHalf2(nums));
+    }
+
     public static int getMoreThenHalf(int[] nums) {
         if (nums == null || nums.length == 0) return -1;
         Arrays.sort(nums);

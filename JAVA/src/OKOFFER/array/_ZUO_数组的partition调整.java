@@ -15,15 +15,14 @@ public class _ZUO_数组的partition调整 {
     }
 
     public static void leftUnique(int[] nums) {
-        if (nums == null || nums.length == 0) return;
-        int l = 0;
-        int r = 1;
-        while (r < nums.length) {
-            if (nums[r++] != nums[l]) {
-                int tmp = nums[r - 1];
-                nums[r - 1] = nums[l++];
-                nums[l] = tmp;
+        if (nums == null || nums.length < 2) return;
+        int u = 0;
+        int i = 1;
+        while (i != nums.length) {
+            if (nums[i] != nums[u]) {
+                swap(nums, ++u, i);
             }
+            i++;
         }
     }
 
