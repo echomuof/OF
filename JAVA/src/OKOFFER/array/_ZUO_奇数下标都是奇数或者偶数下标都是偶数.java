@@ -10,7 +10,7 @@ public class _ZUO_奇数下标都是奇数或者偶数下标都是偶数 {
         int ou = 0;
         int ji = 1;
         int end = nums.length - 1;
-        while (ou <= end && ji <= end) {
+        while (ou < nums.length && ji < nums.length) {
             if (nums[end] % 2 == 0) {
                 swap(nums, ou, end);
                 ou += 2;

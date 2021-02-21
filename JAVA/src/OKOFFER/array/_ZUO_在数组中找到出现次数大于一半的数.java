@@ -24,7 +24,7 @@ public class _ZUO_在数组中找到出现次数大于一半的数 {
         int score = 0;
         for (int num : nums) {
             if (score == 0) x = num;
-            score += num == x ? 1 : -1;
+            score += x == num ? 1 : -1;
         }
         int count = 0;
         for (int num : nums) {

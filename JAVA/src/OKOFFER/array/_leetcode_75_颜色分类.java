@@ -16,14 +16,14 @@ public class _leetcode_75_颜色分类 {
 
     public static void type(int[] nums) {
         if (nums == null || nums.length == 0) return;
-        int l = 0;
-        int r = nums.length;
+        int left = 0;
+        int right = nums.length;
         int i = 0;
-        while (i < r) {
+        while (i < right) {
             if (nums[i] == 0) {
-                swap(nums, i++, l++);
+                swap(nums, i++, left++);
             } else if (nums[i] == 2) {
-                swap(nums, --r, i);
+                swap(nums, i, --right);
             } else {
                 i++;
             }

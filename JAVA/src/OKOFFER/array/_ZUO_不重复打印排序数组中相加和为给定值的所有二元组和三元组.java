@@ -24,7 +24,7 @@ public class _ZUO_不重复打印排序数组中相加和为给定值的所有�
         for (int num : nums) {
             int target = k - num;
             if (set.contains(target)) {
-                System.out.println(target + "," + num);
+                System.out.println(num + " " + target);
                 set.remove(target);
             } else {
                 set.add(num);
@@ -42,7 +42,7 @@ public class _ZUO_不重复打印排序数组中相加和为给定值的所有�
                 int b = nums[j];
                 int target = k - a - b;
                 if (set.contains(target)) {
-                    System.out.println(a + "," + b + "," + target);
+                    System.out.println(a + " " + b + " " + target);
                     set.remove(a);
                     set.remove(b);
                     set.remove(target);

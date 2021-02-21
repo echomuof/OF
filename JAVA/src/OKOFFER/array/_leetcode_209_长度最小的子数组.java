@@ -8,11 +8,13 @@ import java.util.Map;
  */
 public class _leetcode_209_长度最小的子数组 {
     public int minSubArrayLen(int target, int[] nums) {
-        if (nums == null || nums.length == 0) return 0;
+        if (nums == null || nums.length == 0) {
+            return 0;
+        }
+        int sum = 0;
         int minLen = Integer.MAX_VALUE;
         int l = 0;
         int r = 0;
-        int sum = 0;
         while (r < nums.length) {
             sum += nums[r];
             while (sum >= target) {
