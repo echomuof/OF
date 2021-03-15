@@ -11,11 +11,11 @@ import java.util.Set;
 public class _ZUO_最长的可整合子数组的长度 {
     public static int getLIL(int[] nums) {
         if (nums == null || nums.length == 0) return 0;
-        int max = Integer.MIN_VALUE;
-        int min = Integer.MAX_VALUE;
         int ans = 0;
         Set<Integer> set = new HashSet<>();
         for (int i = 0; i < nums.length; i++) {
+            int max = Integer.MIN_VALUE;
+            int min = Integer.MAX_VALUE;
             for (int j = i; j < nums.length; j++) {
                 if (set.contains(nums[j])) break;
                 set.add(nums[j]);

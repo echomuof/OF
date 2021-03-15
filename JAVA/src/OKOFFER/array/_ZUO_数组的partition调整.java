@@ -18,6 +18,7 @@ public class _ZUO_数组的partition调整 {
         if (nums == null || nums.length < 2) return;
         int u = 0;
         int i = 1;
+        double a = 1.0;
         while (i != nums.length) {
             if (nums[i] != nums[u]) {
                 swap(nums, ++u, i);

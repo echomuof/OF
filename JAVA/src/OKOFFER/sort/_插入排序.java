@@ -18,8 +18,8 @@ public class _插入排序 {
             int j = i;
             while (j > 0 && nums[j] < nums[j - 1]) {
                 int tmp = nums[j];
-                nums[j] = nums[j + 1];
-                nums[j + 1] = tmp;
+                nums[j] = nums[j - 1];
+                nums[j - 1] = tmp;
                 j--;
             }
         }

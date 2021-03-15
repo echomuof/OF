@@ -19,8 +19,8 @@ public class _ZUO_子数组的最大累加和问题 {
         int cur = 0;
         for (int i = 0; i < nums.length; i++) {
             cur += nums[i];
-            ans = Math.max(ans, cur);
             cur = Math.max(cur, 0);
+            ans = Math.max(ans, cur);
         }
         return ans == Integer.MIN_VALUE ? 0 : ans;
     }

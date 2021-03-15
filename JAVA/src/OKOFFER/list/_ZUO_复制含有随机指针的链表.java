@@ -25,6 +25,7 @@ public class _ZUO_复制含有随机指针的链表 {
         }
         while (cur != null) {
             map.get(cur).next = map.get(cur.next);
+            // map.get(cur).random = map.get(cur.random);
             cur = cur.next;
         }
         return map.get(head);

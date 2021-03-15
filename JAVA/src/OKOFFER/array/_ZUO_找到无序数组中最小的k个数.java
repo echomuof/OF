@@ -16,12 +16,18 @@ public class _ZUO_找到无序数组中最小的k个数 {
 
     public static int[] topK(int[] nums, int k) {
         if (nums == null || nums.length == 0 || nums.length <= k) return nums;
-        PriorityQueue<Integer> queue = new PriorityQueue<>(k, (o1, o2) -> o1 - o2);
-        for (int num : nums) {
-            queue.add(num);
+        PriorityQueue<Integer> queue = new PriorityQueue<>(k, (o1, o2) -> o2 - o1);
+        for (int i = 0; i < k; i++) {
+            queue.add(nums[i]);
         }
         int[] ans = new int[k];
-        for (int i = 0; i < k; i++) {
+        for (int i = k; i < nums.length; i++) {
+            if (nums[i] < queue.peek()) {
+                queue.poll();
+                queue.add(nums[i]);
+            }
+        }
+        for (int i = k - 1; i >= 0; i--) {
             ans[i] = queue.poll();
         }
         return ans;
