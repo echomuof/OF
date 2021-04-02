@@ -23,7 +23,7 @@ public class _ZUO_二叉树的序列化与反序列化 {
         treeNode1.right = treeNode3;
         treeNode2.left = treeNode4;
         treeNode2.right = treeNode5;
-        treeNode3.left = treeNode6;
+        // treeNode3.left = treeNode6;
         treeNode3.right = treeNode7;
         String str = serialize(treeNode1);
         System.out.println(str);

@@ -13,12 +13,12 @@ import java.util.Map;
  */
 public class _ZUO_在二叉树中找到两个节点的最近公共祖先 {
 
-    public static TreeNode lowestAncestor(TreeNode root, TreeNode o1, TreeNode o2) {
-        if (root == null || root == o1 || root == o2) {
+    public static TreeNode lowestAncestor(TreeNode root, TreeNode p, TreeNode q) {
+        if (root == null || root == p || root == q) {
             return root;
         }
-        TreeNode left = lowestAncestor(root.left, o1, o2);
-        TreeNode right = lowestAncestor(root.right, o1, o2);
+        TreeNode left = lowestAncestor(root.left, p, q);
+        TreeNode right = lowestAncestor(root.right, p, q);
         if (left != null && right != null)
             return root;
         return left == null ? right : left;
